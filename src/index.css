@@ -7,6 +7,10 @@
   background-color: red;
 }
 
+#prova2 {
+  border: 3px solid blue;
+}
+
 .biglietto {
   display: flex;
   gap: 20px;
