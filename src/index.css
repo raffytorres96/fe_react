@@ -1,4 +1,4 @@
-#descrizioneMeteo{
+#descrizioneMeteo {
   display: flex;
   align-items: center;
 }
@@ -8,5 +8,6 @@
 }
 
 .biglietto {
-  
+  display: flex;
+  gap: 20px;
 }
