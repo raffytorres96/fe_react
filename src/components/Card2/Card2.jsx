@@ -2,7 +2,7 @@ import style from './Card2.module.css'
 
 export default function Card2() {
     return (
-        <section className={style.container} id={style.prova}>
+        <section className={style.container} id="{style.prova}">
             <figure>
                 <img src="sole.svg" alt="" />
             </figure>
