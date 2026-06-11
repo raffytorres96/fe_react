@@ -1,0 +1,8 @@
+#descrizioneMeteo{
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-color: red;
+}
