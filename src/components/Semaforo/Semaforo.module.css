@@ -8,8 +8,8 @@
 .cerchio {
     display: flex;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     justify-content: center;
     align-items: center;
 }

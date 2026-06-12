@@ -2,7 +2,8 @@ import { useState } from 'react';
 import styles from './Semaforo.module.css';
 import Box from '../Box/Box';
 
-const colori = ['red', 'yellow', 'green'];
+const colori = ['rosso', 'giallo', 'verde'];
+const coloriCss = { rosso: 'red', giallo: 'gold', verde: 'green' };
 
 export default function Semaforo() {
   const [indice, setIndice] = useState(0);
@@ -21,7 +22,7 @@ export default function Semaforo() {
     <Box colore="black">
       <div className={styles.risultato}>
         <h2>Il semaforo è:</h2>
-        <div className={styles.cerchio} style={{ backgroundColor: colore }}>
+        <div className={styles.cerchio} style={{ backgroundColor: coloriCss[colore] }}>
           {colore}
         </div>
       </div>
