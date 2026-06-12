@@ -11,6 +11,7 @@ import Utente from './components/Utente/Utente.jsx'
 import Box from './components/Box/Box.jsx'
 import Contatore from './components/Contatore/Contatore.jsx'
 import Semaforo from './components/Semaforo/Semaforo.jsx'
+import Orologio from './components/Orologio/Orologio.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,7 +38,8 @@ function App() {
         </Box>
       </Box> */}
       {/* <Contatore /> */}
-      <Semaforo />
+      {/* <Semaforo /> */}
+      <Orologio />
     </>
   );
 }
