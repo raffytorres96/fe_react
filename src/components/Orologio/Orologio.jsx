@@ -1,27 +1,30 @@
-import { useState, useEffect } from 'react';
 import styles from './Orologio.module.css';
+import {useState, useEffect} from 'react';
 
-// funzione figlia
+//funzione figlia
 function OrologioFiglio() {
-    const [ora, setOra] = useState(new Date());
+  const [ora, setOra] = useState(new Date());
 
-    useEffect(() => {
-        // intervallo= identificativo restituito da setInterval
-        const intervallo = setInterval(() => {
-            setOra(new Date())
-        }, 1000);
-    return () => clearInterval(intervallo)}, []);
+  useEffect(() => {
+    // intervallo = identificativo restituito da setInterval
+    const intervallo = setInterval(() => {
+      setOra(new Date());
+    }, 1000);
 
-    return <div className={styles.orologio}>{ora.toLocaleTimeString()}</div>
-} // fine funzione figlia
+    return () => clearInterval(intervallo);
+  }, []);
 
-//componente padre che monta e smonta la funzione orologio
+  return <div className={styles.orologio}>{ora.toLocaleTimeString()}</div>;
+} //fine funzione figlia
+
+//Componente padre che monta e smonta la funzione orologio
 
 export default function Orologio() {
-    const [visibile, setVisibile] = useState(true);
+  const [visible, setVisibile] = useState(true);
+
   return (
     <div>
-        <OrologioFiglio />
+      <OrologioFiglio />
     </div>
   );
 }
