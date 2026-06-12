@@ -27,5 +27,5 @@ export default function Utente() {
                 <Scheda key={u.id} nome={u.nome} email={u.email} ruolo={u.ruolo} />
             ))}
         </div>
-    )
+    );
 }
