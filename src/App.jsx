@@ -10,6 +10,7 @@ import Card2 from './components/Card2/Card2.jsx'
 import Utente from './components/Utente/Utente.jsx'
 import Box from './components/Box/Box.jsx'
 import Contatore from './components/Contatore/Contatore.jsx'
+import Semaforo from './components/Semaforo/Semaforo.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,7 +26,7 @@ function App() {
       <Meteo />
       <Card />
       <Card2 /> */}
-      <Box colore="green">
+      {/* <Box colore="green">
         <h2>Titolo Box1</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora temporibus eum ullam sed odit necessitatibus beatae unde illum magni dolorum iste repellendus incidunt, doloremque labore at suscipit. Corrupti, quos aspernatur.</p>
       </Box>
@@ -34,8 +35,9 @@ function App() {
         <Box colore="blue">
           <p>Con dentro un altro box</p>
         </Box>
-      </Box>
-      <Contatore />
+      </Box> */}
+      {/* <Contatore /> */}
+      <Semaforo />
     </>
   );
 }
