@@ -31,8 +31,6 @@ export default function Contatore() {
                 }))
                 }
                 >Aumenta tutti di 2</button>
-            </Box>
-            <Box>
                 <button onClick={() => setContatori(prev => ({
                     contatore2: prev.contatore2 + 2,
                     contatore3: prev.contatore3 + 2,
